@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- SCRIPTS -->
+  <script src= "./scripts/app.js" defer></script>
   <!-- STYLES -->
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/app.css">
@@ -61,12 +63,17 @@
         family, and co-workers.
       </p>
       <form class= "form">
-        <input 
-          class= "input"
-          type= "text"
-          name= "email"
-          placeholder= "Enter your email...">
-        <label for= "email"></label>  
+        <div>
+          <input 
+            class= "input"
+            type= "text"
+            name= "email"
+            placeholder= "Enter your email...">
+          <label for= "email"></label>  
+          <p class= "error-message">
+            Please check your email
+          </p>
+        </div>  
         <button 
           class= "btn-submit"
           type= "submit">

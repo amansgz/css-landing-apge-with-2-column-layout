@@ -46,15 +46,21 @@ font-family: 'Open Sans', sans-serif;
 - HERO SECTION
 *********************************/
 .hero-section {
-  padding: clamp(1rem, 3vw, 3rem);
+  padding: clamp(1rem, 4vw, 3rem);
 }
 .hero-image {
   width: 100%;
 }
 .hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
+/* agregar wdth a title y text */
 .hero-title {
+  width: min(450px, 90vw);
   font-family: var(--font-title);
   font-size: var(--size-title);
   font-weight: 700;
@@ -62,6 +68,7 @@ font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
 }
 .hero-text {
+  width: min(390px, 90vw);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-family: var(--font-text);
@@ -78,10 +85,21 @@ font-family: 'Open Sans', sans-serif;
 .input::placeholder {
   color: var(--light-gray);
 }
+.input-error {
+  border: 1px solid red;
+}
+.error-message {
+  opacity: 0;
+  margin-top: .5rem;
+  font-size: 14px;
+  text-align: left;
+  color: red;
+}
 .btn-submit {
   width: 80vw;
+  height: 45px;
   padding: .8rem;
-  margin-top: 1rem;
+  margin-top: .8rem;
   font-family: var(--font-title);
   color: white;
   background-color: var(--bright-blue);
@@ -93,6 +111,7 @@ font-family: 'Open Sans', sans-serif;
 .btn-submit:focus {
   background-color: hsla(224, 93%, 58%, 0.6);
   cursor: pointer;
+  transition: all 0.1s ease;
 }
 /********************************* 
 - MEDIA QUERIES
@@ -102,15 +121,12 @@ font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
   }
   .hero-info {
+    align-items: start;
+    justify-content: center;
     text-align: left;
-  }
-  .hero-title {
-    width: 50vw;
-  }
-  .hero-text {
-    width: 40vw;
   }
   .form {
     display: flex;
@@ -121,6 +137,6 @@ font-family: 'Open Sans', sans-serif;
   }
   .btn-submit {
     width: 15vw;
-    margin-top: 0;
+    margin-top: 0;  
   }
 }
