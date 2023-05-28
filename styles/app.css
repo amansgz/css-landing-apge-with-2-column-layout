@@ -14,3 +14,27 @@ font-family: 'Raleway', sans-serif;
 open sans body
 font-family: 'Open Sans', sans-serif;
 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(1rem, 3vw, 3rem);
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(16px, 3vw, 18px);
+}
+.header-logo {
+  width: min(25vw, 135px);
+}
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-menu-link {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+}
+.nav-menu-link:hover,
+.nav-menu-link:focus {
+  color: var(--desaturated-blue);
+}
