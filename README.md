@@ -6,7 +6,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). 
 
 
-![Design preview for the Fylo landing page with two column layout challenge]()
+<!-- ![Design preview for the Fylo landing page with two column layout challenge]() -->
 
 ## The challenge
 
@@ -24,9 +24,9 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-## Live site solution
+<!-- ## Live site solution
 
-[]() deployed with
+[]() -->
 
 ## Author
 
