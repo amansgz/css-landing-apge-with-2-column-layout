@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- SCRIPTS -->
+  <script src= "./scripts/app.js" defer></script>
   <!-- STYLES -->
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/app.css">
@@ -43,14 +45,46 @@
     </ul>  
   </header>
   
+  <main>
+    <div class= "hero-section">
+      <div>
+        <img 
+          class= "hero-image"
+          src= "./styles/images/illustration-1.svg" 
+          alt= "storing files illustration">
+      </div>
 
-  All your files in one secure location, accessible anywhere.
+      <div class= "hero-info">
+        <h2 class= "hero-title">
+          All your files in one secure location, accessible anywhere.
+        </h2>
+        <p class= "hero-text">
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+        <form class= "form">
+          <div>
+            <input 
+              class= "input"
+              type= "text"
+              name= "email"
+              placeholder= "Enter your email...">
+            <label for= "email"></label>  
+            <p class= "error-message">
+              Please check your email
+            </p>
+          </div>  
+          <button 
+            class= "btn-submit"
+            type= "submit">
+            Get Started
+          </button>
+        </form>  
+      </div>  
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
-
-  Get Started
+    </div>
+  </main>  
 
   Stay productive, wherever you are
 
