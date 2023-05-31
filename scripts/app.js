@@ -1,45 +1,26 @@
-const inputEmail = document.querySelector('.input');
-const btnSubmit = document.getElementById('btnSubmit');
-const errorMessage = document.querySelector('.error-message');
+const inputEmail = document.querySelectorAll('.input');
+const btn = document.querySelectorAll('.btn');
+const errorMessage = document.querySelectorAll('.error-message');
 
-const signInput = document.getElementById('signupInput');
-const btnSignup = document.getElementById('btnSignup');
-const signupMessage = document.querySelector('.signup-message');
+btn.forEach((button, i) => {
+  button.addEventListener('click', e => {
+    e.preventDefault();
+    const emailValue = inputEmail[i].value;
+    const validation = validate_email(emailValue);
 
-btnSubmit.addEventListener('click', (e) => {
-  e.preventDefault();
-  
-  const emailValue = inputEmail.value;
-  const validation = validate_email(emailValue);
+    if (!validation) { 
+      inputEmail[i].classList.add('input-error');
+      errorMessage[0].style.color = 'hsl(0, 81%, 41%)';
+      errorMessage[1].style.color = 'hsl(0, 0%, 75%)';
+      errorMessage[i].style.opacity = '1';
 
-  if (!validation) {
-    inputEmail.classList.add('input-error');
-    errorMessage.style.opacity = '1';
-  } else {
-    inputEmail.value = '';
-    inputEmail.classList.remove('input-error');
-    errorMessage.style.opacity = '0';
-    btnSubmit.style.backgroundColor = 'hsl(224, 93%, 58%)';
-  }
-});
-
-btnSignup.addEventListener('click', (e) => {
-  e.preventDefault();
-  
-  const inputValue = signInput.value;
-  const validation = validate_email(inputValue);
-
-  if (!validation) {
-    signInput.classList.add('input-error');
-    signupMessage.style.opacity = '1';
-  } else {
-    signInput.value = '';
-    signInput.classList.remove('input-error');
-    signupMessage.style.opacity = '0';
-    btnSignup.style.backgroundColor = 'hsl(224, 93%, 58%)';
-  }
+    } else {
+      inputEmail[i].value = '';
+      inputEmail[i].classList.remove('input-error');
+      errorMessage[i].style.opacity = '0';
+    }
+  })
 })
-
 
 function validate_email(email) {
   const regex =  /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;

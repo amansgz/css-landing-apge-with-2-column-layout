@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
+  <!-- ICONS -->
+  <script src="https://kit.fontawesome.com/1fbae0c810.js" crossorigin="anonymous"></script>
   <!-- SCRIPTS -->
   <script src= "./scripts/app.js" defer></script>
   <!-- STYLES -->
@@ -21,24 +22,24 @@
 </head>
 <body>
 
-  <header class= "header">
+  <header class= "flex-between">
     <img 
-      class= "header-logo"
+      class= "logo"
       src= "./styles/images/logo.svg" 
       alt= "Fylo logo">
     <ul class= "nav-menu">
       <li>
-        <a href="#" class= "nav-menu-link">
+        <a href="#features" class= "nav-menu-link">
           Features
         </a>
       </li>
       <li>
-        <a href="#" class= "nav-menu-link">
+        <a href="#team" class= "nav-menu-link">
           Team
         </a>
       </li>
       <li>
-        <a href="#" class= "nav-menu-link">
+        <a href="#signup" class= "nav-menu-link">
           Sign in
         </a>
       </li>
@@ -46,29 +47,30 @@
   </header>
   
   <main>
-    <section class= "hero-section">
+    <!-- Section Features starts -->
+    <section class= "features" id= "features">
       <div>
-        <img 
-          class= "hero-image"
+        <img
           src= "./styles/images/illustration-1.svg" 
           alt= "storing files illustration">
       </div>
 
-      <div class= "hero-info">
-        <h2 class= "hero-title">
+      <div class= "info column-center">
+        <h2 class= "title title-features">
           All your files in one secure location, accessible anywhere.
         </h2>
-        <p class= "hero-text">
+        <p class= "text text-features">
           Fylo stores your most important files in one secure location. 
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.
         </p>
-        <form class= "form">
+        <form class= "form-features">
           <div>
             <input 
               class= "input"
               type= "text"
               name= "email"
+              id= "email"
               placeholder= "Enter your email...">
             <label for= "email"></label>  
             <p class= "error-message">
@@ -76,7 +78,7 @@
             </p>
           </div>  
           <button 
-            class= "btn-submit"
+            class= "btn btn-submit"
             id= "btnSubmit"
             type= "submit">
             Get Started
@@ -84,40 +86,48 @@
         </form>  
       </div>  
     </section>
+    <!-- Section Features ends -->
 
-    <section class= "main-section">
+    <picture class= "curve">
+      <source srcset="./styles/images/bg-curve-desktop.svg" media="(min-width: 768px)">
+      <source srcset="./styles/images/bg-curve-mobile.svg" media="(max-width: 768px)">
+      <img src="./styles/images/bg-curve-desktop.svg" alt="curve image">
+    </picture>
+
+    <!-- Section Team starts -->
+    <section class= "team" id= "team">
       <div>
         <img 
-          class= "main-image"
           src= "./styles/images/illustration-2.svg" 
-          alt= "persons sharing comments">
+          alt= "team sharing comments">
       </div>  
-      <div class= "main-info">
-        <h2 class= "main-title">
+      <div class= "info column-center info-team">
+        <h2 class= "title title-team">
           Stay productive, wherever you are
         </h2>
-        <p class= "main-text">
+        <p class= "text text-team">
           Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
         </p>
-        <p class= "main-text">
+        <p class= "text text-team">
           Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
         </p>
 
-        <div class= "main-link">
-          <a href= "#" class= "link">
+        <div class= "link-icon flex-center">
+          <a href= "#" class= "link-features">
             See how Fylo works
           </a>       
-          <img         
+          <img
+            class= "icon"   
             src= "./styles/images/icon-arrow.svg" 
             alt="">        
-        </div>  
+        </div>
 
         <article class= "card">
           <img 
-            class= "quotes-img"
+            class= "icon"
             src= "./styles/images/icon-quotes.svg"
             alt= "">
-          <blockquote class= "card-text">
+          <blockquote class= "text">
             Fylo has improved our team productivity by an order of magnitude. Since 
             making the switch our team has become a well-oiled collaboration machine.
           </blockquote>
@@ -127,10 +137,10 @@
               src= "./styles/images/avatar-testimonial.jpg" 
               alt="Kyle Burton avatar">
             <div class= "card-details">
-              <span class= "card-name">
+              <span class= "details-name">
                 Kyle Burton
               </span>
-              <span class= "card-position">
+              <span class= "details-position">
                 Founder & CEO, Huddle
               </span>
             </div>  
@@ -138,33 +148,35 @@
         </article>
       </div>    
     </section>
+    <!-- Section Team ends -->
 
-    <section class= "signup-section">
-      <div class= "signup-info">
-        <h2 class= "signup-title">
+    <!-- Section Sign Up starts -->
+    <section class= "signup" id= "signup">
+      <div class= "info-signup column-center">
+        <h2 class= "title title-signup">
           Get early access today
         </h2>
-        <p class= "signup-text">
+        <p class= "text text-signup">
           It only takes a minute to sign up and our free starter tier is extremely generous. 
           If you have any questions, our support team would be happy to help you.
         </p>
       </div>
 
-      <form class= "signup-form">
+      <form class= "form-signup">
         <div>
           <input 
-            class= "input signup-input"
-            id= "signupInput"
+            class= "input input-signup"
             type= "text"
             name= "email"
+            id= "mail"
             placeholder= "Enter your email...">
-          <label for= "email"></label>  
-          <p class= "signup-message">
+          <label for= "mail"></label>  
+          <p class= "error-message">
             Please check your email
           </p>
         </div>  
         <button 
-          class= "btn-submit btn-signup"
+          class= "btn btn-signup"
           id= "btnSignup"
           type= "submit">
           Get Started For Free
@@ -172,102 +184,100 @@
       </form>  
 
     </section>
-    
+    <!-- Section Sign Up ends -->
   </main>  
 
   <footer class= "footer">
-    <div class= "contact-links">
-      <img src= "./styles/images/footer-logo.svg" alt= "footer logo">
-      <div>
-        <i>
-          <img src="./styles/images/icon-phone.svg" alt="">
-        </i>
-        <span>
-          Phone: +1-543-123-4567
-        </span>  
+    <img 
+    class= "logo logo-footer"
+    src= "./styles/images/footer-logo.svg" 
+    alt= "footer logo">
+    <div class= "grid">
+      <div class= "contact">
+        <div>
+          <img 
+            class= "icon"
+            src="./styles/images/icon-phone.svg" 
+            alt="">
+          <span>
+            Phone: +1-543-123-4567
+          </span>  
+        </div>
+        <div>
+          <img 
+            class= "icon"
+            src= "./styles/images/icon-email.svg" 
+            alt="" >
+          <span>
+            example@fylo.com
+          </span>
+        </div>  
       </div>
-      <div>
-        <i>
-          <img src= "./styles/images/icon-email.svg" alt="">
-        </i>
-        <span>
-          example@fylo.com
-        </span>
-      </div>  
-    </div>
-    <div class= "footer-nav">
-      <ul>
-        <li>
-          <a href="#">
-            About Us
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Jobs
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Press
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Blog
-          </a>
-        </li>
-      </ul>
 
-      <ul>
-        <li>
-          <a href="#">
-            Contact Us
-          </a>
-        </li>
-        
-        <li>
-          <a href="#">
-            Terms
-          </a>
-        </li>
-        
-        <li>
-          <a href="#">
-            Privacy
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class= "social-links">
-      <ul class= "social-menu">
-        <li>
-          <a href="#">
-            <img 
-              class= "social-icon"
-              src= "./styles/images/icon-facebook.svg" 
-              alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img 
-            class= "social-icon"
-            src= "./styles/images/icon-twitter.svg" 
-            alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img 
-            class= "social-icon"
-            src= "./styles/images/icon-instagram.svg" 
-            alt="">
-          </a>
-        </li>
-      </ul>
-      
-      
+      <div class= "footer-nav">
+        <ul>
+          <li>
+            <a href="#">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Jobs
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Press
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              Contact Us
+            </a>
+          </li>
+          
+          <li>
+            <a href="#">
+              Terms
+            </a>
+          </li>
+          
+          <li>
+            <a href="#">
+              Privacy
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class= "social">
+        <ul class= "social-menu flex-center">
+          <li>
+            <a href="#" class= "social-icon">
+              <i class= "fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class= "social-icon">
+              <i class= "fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class= "social-icon">
+              <i class= "fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
