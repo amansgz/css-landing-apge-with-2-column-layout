@@ -307,6 +307,9 @@ img {
   .title-team {
     font-size: var(--size-title);
   }
+  .text-team {
+    padding-left: 0;
+  }
   .link-icon {
     margin: .5rem 0 5rem;
   }
@@ -339,11 +342,12 @@ img {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-items: stretch; 
   }
   .footer-nav {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 4vw;
     justify-self: flex-end;
   }
   .footer-nav ul {
