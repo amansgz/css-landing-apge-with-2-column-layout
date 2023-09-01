@@ -1,4 +1,4 @@
-# 👩‍💻 Fylo landing page with two column layout solution
+# 👩‍💻 Fylo landing page with two column layout
 
 
 ## The challenge
