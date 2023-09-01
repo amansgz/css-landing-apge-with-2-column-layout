@@ -1,12 +1,5 @@
-# 👩‍💻 Frontend Mentor - Fylo landing page with two column layout solution
+# 👩‍💻 Fylo landing page with two column layout solution
 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-[Join Frontend Mentor Discord community](https://discord.gg/UAfh3qzhYb)
-
-This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). 
-
-
-![Design preview for the Fylo landing page with two column layout challenge](./styles/images/preview.png)
 
 ## The challenge
 
@@ -24,10 +17,19 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-## Live site solution
 
-[Live site](https://amansgz.github.io/css-landing-page-with-2-column-layout/) deployed with GitHub Pages.
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/css-landing-page-with-2-column-layout/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Author
+![Design preview for the Fylo landing page with two column layout challenge](./styles/images/preview.png)
 
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
