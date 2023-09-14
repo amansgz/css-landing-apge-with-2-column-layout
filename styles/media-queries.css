@@ -1,0 +1,78 @@
+/********************************* 
+- MEDIA QUERIES
+*********************************/
+
+@media screen and (min-width: 768px) {
+  .grid__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .md__order__right {
+    order: 1;
+  }
+  .md__order__left {
+    order: 0;
+  }  
+  .content {
+    align-items: start;
+    text-align: left;
+  }
+  .team__works__link {
+    margin: .5rem 0 5rem;
+  }
+  
+  /********************************* 
+  - FOOTER
+  *********************************/
+  .grid__container__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px 300px;
+    gap: 2rem;
+  }
+  .footer__logo {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+  .footer__contact {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-top: 0;
+  }
+  .footer__nav {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    columns: 2;
+  }
+  .social__icons {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+  .social__menu {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px){ 
+  .features__form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1200px){ 
+  .title {
+    width: 25ch;
+  }
+  .team__title {
+    font-size: 2.5rem;
+    width: 28ch;
+  }
+  .text {
+    width: 58ch;
+  }
+  .signin__text {
+    width: 56ch;
+  }
+}  
