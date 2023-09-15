@@ -1,10 +1,9 @@
 /********************************* 
 - MEDIA QUERIES
 *********************************/
-
 @media screen and (min-width: 768px) {
   .grid__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);   
   }
   .md__order__right {
     order: 1;
@@ -13,20 +12,25 @@
     order: 0;
   }  
   .content {
-    align-items: start;
+    align-items: flex-start;
     text-align: left;
   }
+  /* TEAM SECTION */
   .team__works__link {
     margin: .5rem 0 5rem;
   }
-  
-  /********************************* 
-  - FOOTER
-  *********************************/
+  .section__team {
+    background-image: url(./images/bg-curve-desktop.svg);
+  }
+  .section__team .grid__container {
+    padding-bottom: 8rem;
+  }
+    
+  /* FOOTER */
   .grid__container__columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 130px 300px;
+    grid-template-rows: 100px 175px;
     gap: 2rem;
   }
   .footer__logo {
@@ -56,9 +60,20 @@
 @media screen and (min-width: 1024px){ 
   .features__form {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 25vw 1fr;
     align-items: flex-start;
     gap: 1rem;
+    width: 40vw;
+  }
+  .signin__form {
+    width: 30vw;
+    align-items: flex-start;
+  }
+  .signin__input {
+    width: 30vw;
+  }
+  .btn__signin {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1200px){ 
@@ -75,4 +90,4 @@
   .signin__text {
     width: 56ch;
   }
-}  
+}
