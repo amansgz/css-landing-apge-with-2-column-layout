@@ -228,9 +228,9 @@ INPUT EMAILS (FEATURES / SIGNIN)
 .team__works__link:after {
   content: '';
   position: absolute;
-  top: 25px;
+  top: 33px;
   left: 0;
-  width: 165px;
+  width: 95%;
   height: 2px;
   background-color: var(--moderate-cyan);
 }
@@ -291,6 +291,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
 }
 .footer__contact {
   margin: 4rem 0;
+  font-size: 1.5rem;
 }
 .footer__contact > div {
   display: flex;
@@ -315,7 +316,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
   color: var(--desaturated-blue);
 }
 .social__icons {
-  margin-top: 1rem;
+  margin: 5rem 0;
 }
 .social__menu {
   display: flex;
@@ -325,8 +326,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
   padding: 1.5rem;
 }
 .social__menu li a {
-  width: min(3vw, 15px);
-  padding: .8rem;
+  padding: .8rem 1rem;
   border: 1px solid white;
   border-radius: 50%;
   color:white;
