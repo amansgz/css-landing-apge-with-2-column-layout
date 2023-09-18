@@ -26,11 +26,16 @@
   .team__works__link {
     margin: .5rem 0 5rem;
   }
-    
+
+  /* SIGNING */
+  .signin__form {
+    justify-self: flex-end;
+    align-items: flex-start;
+  }    
   /* FOOTER */
   .grid__container__columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 35% 35% 28%;
     grid-template-rows: 100px 175px;
     gap: 2rem;
   }
@@ -67,6 +72,9 @@
     gap: 1rem;
     width: 40vw;
   }
+  /********************************* 
+  - SIGNIN SECTION
+  *********************************/
   .signin__form {
     width: 30vw;
     align-items: flex-start;
@@ -76,6 +84,10 @@
   }
   .btn__signin {
     width: 50%;
+  }
+   /* FOOTER */
+   .grid__container__columns {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 1200px){ 

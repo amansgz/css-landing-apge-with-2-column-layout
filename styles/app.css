@@ -35,6 +35,8 @@ html {
   scroll-behavior: smooth;
 }
 body { 
+  max-width: 1440px;
+  margin: auto;
   font-family: var(--main-font);
   font-size: 1.6rem;
   scroll-behavior: smooth;  
@@ -282,7 +284,13 @@ INPUT EMAILS (FEATURES / SIGNIN)
 .client__position {
   font-size: 12px;
 }
-
+/********************************* 
+- SIGNIN SECTION
+*********************************/
+.section__signin .grid__container {
+  place-items: start;
+  align-items: center;
+}
 /********************************* 
 - FOOTER
 *********************************/
@@ -328,7 +336,6 @@ INPUT EMAILS (FEATURES / SIGNIN)
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 1.5rem;
 }
 .social__menu li a {
   padding: .8rem 1rem;
