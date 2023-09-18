@@ -16,14 +16,15 @@
     text-align: left;
   }
   /* TEAM SECTION */
-  .team__works__link {
-    margin: .5rem 0 5rem;
-  }
-  .section__team {
-    background-image: url(./images/bg-curve-desktop.svg);
+  .section__team:before {
+    content: url(./images/bg-curve-desktop.svg);
+    top: -90px;
   }
   .section__team .grid__container {
     padding-bottom: 8rem;
+  }
+  .team__works__link {
+    margin: .5rem 0 5rem;
   }
     
   /* FOOTER */
@@ -51,6 +52,7 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     justify-self: center;
+    margin-top: 0;
   }
   .social__menu {
     padding: 0;
