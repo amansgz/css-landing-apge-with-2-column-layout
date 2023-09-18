@@ -18,9 +18,9 @@
   --size-card-text: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.1912)), 1.6rem);
 
   /* PADDINGS */
-  --header-block-padding: 2.5rem;
-  --section-block-padding: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 2.8681)), 7rem);
-  --section-inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 5.7361)), 8rem);
+  --header-block-padding: 3rem;
+  --section-block-padding: clamp(5rem, calc(5rem + ((1vw - 0.32rem) * 2.8681)), 8rem);
+  --section-inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 9.5602)), 12rem);
   --grid-team-block-padding: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 2.8681)), 7rem);
 }
 *,
@@ -162,7 +162,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
   width: 100%;
   height: 45px;
   padding: .8rem;
-  margin-top: .3rem;
+  margin-top: .7rem;
   font-family: var(--secondary-font);
   font-size: 1.4rem;
   color: white;
@@ -286,13 +286,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
 .client__position {
   font-size: 12px;
 }
-/********************************* 
-- SIGNIN SECTION
-*********************************/
-.section__signin .grid__container {
-  place-items: start;
-  align-items: center;
-}
+
 /********************************* 
 - FOOTER
 *********************************/
