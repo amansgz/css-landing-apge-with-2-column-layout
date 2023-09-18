@@ -18,7 +18,7 @@
   --size-card-text: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.1912)), 1.6rem);
 
   /* PADDINGS */
-  --header-block-padding: 5rem;
+  --header-block-padding: 2.5rem;
   --section-block-padding: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 2.8681)), 7rem);
   --section-inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 5.7361)), 8rem);
   --grid-team-block-padding: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 2.8681)), 7rem);
@@ -184,6 +184,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 .nav__menu {
   display: flex;
