@@ -202,6 +202,7 @@ INPUT EMAILS (FEATURES / SIGNIN)
 .section__features {
   padding: var(--section-block-padding) var(--section-inline-padding) 17rem;
   position: relative; 
+  background-color: white;
   overflow-x: clip;
 }
 /********************************* 
